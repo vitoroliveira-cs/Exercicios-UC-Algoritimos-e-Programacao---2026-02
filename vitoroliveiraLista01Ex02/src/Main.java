@@ -1,30 +1,26 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        int numero1;
+        int numero2;
+        int numero3;
 
-        int valorA;
-        int valorB;
+        System.out.println("Digite o primeiro número:");
+        numero1 = input.nextInt();
+        System.out.println("Digite o segundo número:");
+        numero2 = input.nextInt();
+        System.out.println("Digite o terceiro número:");
+        numero3 = input.nextInt();
 
-        System.out.println("Digite o valor de A: ");
-        valorA = input.nextInt();
-        System.out.println("Digite o valor de B: ");
-        valorB = input.nextInt();
+        int soma = numero1 + numero2 + numero3;
+        int media = soma / 3;
 
-        int valorC;
+        System.out.println("A soma dos números é: " + soma);
 
-        valorC = valorA;
-        valorA = valorB;
-        valorB = valorC;
-
-
-
-        System.out.println("O valor de A é: " + valorA);
-        System.out.println("O valor de B é: " + valorB);
+        System.out.println("A média aritmética dos números é: " + media);
 
     }
 }
