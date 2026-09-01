@@ -15,8 +15,16 @@ public class Main {
         System.out.println("Digite o valor de B: ");
         valorB = input.nextInt();
 
-        System.out.println("O valor de A é: " + valorB);
-        System.out.println("O valor de B é: " + valorA);
+        int valorC;
+
+        valorC = valorA;
+        valorA = valorB;
+        valorB = valorC;
+
+
+
+        System.out.println("O valor de A é: " + valorA);
+        System.out.println("O valor de B é: " + valorB);
 
     }
 }
